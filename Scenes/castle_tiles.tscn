@@ -1,0 +1,229 @@
+[gd_scene load_steps=76 format=3 uid="uid://wv82lftcenaa"]
+
+[ext_resource type="PackedScene" uid="uid://b7dgc3re0v058" path="res://Assets/kenney_castle-kit/Models/GLB format/bridge-draw.glb" id="1_3u862"]
+[ext_resource type="PackedScene" uid="uid://b34rga0lqtm25" path="res://Assets/kenney_castle-kit/Models/GLB format/bridge-straight-pillar.glb" id="2_r4qjd"]
+[ext_resource type="PackedScene" uid="uid://diydwknxlfmq4" path="res://Assets/kenney_castle-kit/Models/GLB format/bridge-straight.glb" id="3_kbje4"]
+[ext_resource type="PackedScene" uid="uid://c4ouuimlkexbs" path="res://Assets/kenney_castle-kit/Models/GLB format/door.glb" id="4_ko6yi"]
+[ext_resource type="PackedScene" uid="uid://d4cndjddurpyb" path="res://Assets/kenney_castle-kit/Models/GLB format/flag-banner-long.glb" id="5_5bphv"]
+[ext_resource type="PackedScene" uid="uid://dp7bepcqmvt6n" path="res://Assets/kenney_castle-kit/Models/GLB format/flag-banner-short.glb" id="6_4vscj"]
+[ext_resource type="PackedScene" uid="uid://gohdn81bjypf" path="res://Assets/kenney_castle-kit/Models/GLB format/flag-pennant.glb" id="7_umdth"]
+[ext_resource type="PackedScene" uid="uid://bdobvu8co3bss" path="res://Assets/kenney_castle-kit/Models/GLB format/flag-wide.glb" id="8_nmllv"]
+[ext_resource type="PackedScene" uid="uid://dor0fxsqcqnh7" path="res://Assets/kenney_castle-kit/Models/GLB format/flag.glb" id="9_cvt45"]
+[ext_resource type="PackedScene" uid="uid://b5pdkbvxqo11r" path="res://Assets/kenney_castle-kit/Models/GLB format/gate.glb" id="10_n3mel"]
+[ext_resource type="PackedScene" uid="uid://btje0ixs72yb6" path="res://Assets/kenney_castle-kit/Models/GLB format/ground-hills.glb" id="11_snhba"]
+[ext_resource type="PackedScene" uid="uid://cd41hgp5oxpbn" path="res://Assets/kenney_castle-kit/Models/GLB format/ground.glb" id="12_4jqoc"]
+[ext_resource type="PackedScene" uid="uid://b6pcehwxri1kg" path="res://Assets/kenney_castle-kit/Models/GLB format/metal-gate.glb" id="13_w3icd"]
+[ext_resource type="PackedScene" uid="uid://ogwneh7qs830" path="res://Assets/kenney_castle-kit/Models/GLB format/rocks-large.glb" id="14_j6k5u"]
+[ext_resource type="PackedScene" uid="uid://dibbh3v7faehg" path="res://Assets/kenney_castle-kit/Models/GLB format/rocks-small.glb" id="15_axtov"]
+[ext_resource type="PackedScene" uid="uid://b8korh7w7nxah" path="res://Assets/kenney_castle-kit/Models/GLB format/siege-ballista-demolished.glb" id="16_m68oi"]
+[ext_resource type="PackedScene" uid="uid://c81ihxcjtvja3" path="res://Assets/kenney_castle-kit/Models/GLB format/siege-ballista.glb" id="17_gp6qe"]
+[ext_resource type="PackedScene" uid="uid://c1cbmydv17d2n" path="res://Assets/kenney_castle-kit/Models/GLB format/siege-catapult-demolished.glb" id="18_q7gtr"]
+[ext_resource type="PackedScene" uid="uid://dpcnrb8c06x2n" path="res://Assets/kenney_castle-kit/Models/GLB format/siege-catapult.glb" id="19_okspj"]
+[ext_resource type="PackedScene" uid="uid://csw62mvftcm6v" path="res://Assets/kenney_castle-kit/Models/GLB format/siege-ram-demolished.glb" id="20_47xpm"]
+[ext_resource type="PackedScene" uid="uid://d0pei23l7vay5" path="res://Assets/kenney_castle-kit/Models/GLB format/siege-ram.glb" id="21_8crtd"]
+[ext_resource type="PackedScene" uid="uid://ctvuea0ng7jfj" path="res://Assets/kenney_castle-kit/Models/GLB format/siege-tower-demolished.glb" id="22_dkdqx"]
+[ext_resource type="PackedScene" uid="uid://bj273spokvjgy" path="res://Assets/kenney_castle-kit/Models/GLB format/siege-tower.glb" id="23_xiqde"]
+[ext_resource type="PackedScene" uid="uid://6itxce61qk86" path="res://Assets/kenney_castle-kit/Models/GLB format/siege-trebuchet-demolished.glb" id="24_c6aql"]
+[ext_resource type="PackedScene" uid="uid://drlm8qvwj1d7f" path="res://Assets/kenney_castle-kit/Models/GLB format/siege-trebuchet.glb" id="25_fn61q"]
+[ext_resource type="PackedScene" uid="uid://nty3ee0n4cdp" path="res://Assets/kenney_castle-kit/Models/GLB format/stairs-stone-square.glb" id="26_brjif"]
+[ext_resource type="PackedScene" uid="uid://ciwu81ay5lhth" path="res://Assets/kenney_castle-kit/Models/GLB format/stairs-stone.glb" id="27_smnfu"]
+[ext_resource type="PackedScene" uid="uid://bft2hiw86keos" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-base.glb" id="28_1r8fk"]
+[ext_resource type="PackedScene" uid="uid://b5awv0f78dywc" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-base.glb" id="29_ujo3p"]
+[ext_resource type="PackedScene" uid="uid://e74mqrn4kqs7" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-mid.glb" id="30_bx3jk"]
+[ext_resource type="PackedScene" uid="uid://d3dep3qupjs8l" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-roof-secondary.glb" id="31_wc158"]
+[ext_resource type="PackedScene" uid="uid://b7k0a6cnvsdj6" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-roof.glb" id="32_exs3l"]
+[ext_resource type="PackedScene" uid="uid://cm2ol1au6n25f" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-top-wood.glb" id="33_atms1"]
+[ext_resource type="PackedScene" uid="uid://cwexeyquf2qib" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-hexagon-top.glb" id="34_ven4e"]
+[ext_resource type="PackedScene" uid="uid://cux0k4lnrdep8" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-slant-roof.glb" id="35_7cmyy"]
+[ext_resource type="PackedScene" uid="uid://dbjeamtmq13bn" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-arch.glb" id="36_37nvs"]
+[ext_resource type="PackedScene" uid="uid://bl63q04ss4tn5" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-base-border.glb" id="37_yoj4d"]
+[ext_resource type="PackedScene" uid="uid://bw841xpelsf3r" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-base-color.glb" id="38_8q0k3"]
+[ext_resource type="PackedScene" uid="uid://b2qmab7n6qcv0" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-base.glb" id="39_mi3jh"]
+[ext_resource type="PackedScene" uid="uid://rifoojmsjwly" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-mid-color.glb" id="40_8ur8l"]
+[ext_resource type="PackedScene" uid="uid://bktnqur50gcpn" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-mid-door.glb" id="41_sc4cl"]
+[ext_resource type="PackedScene" uid="uid://bsjc43mf6ok2i" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-mid-open-simple.glb" id="42_vvgyk"]
+[ext_resource type="PackedScene" uid="uid://c0u7x0ml2oyvp" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-mid-open.glb" id="43_8a84e"]
+[ext_resource type="PackedScene" uid="uid://cgd0vi6nliy7k" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-mid-windows.glb" id="44_xgrdu"]
+[ext_resource type="PackedScene" uid="uid://cgdmw486yvj5d" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-mid.glb" id="45_sroce"]
+[ext_resource type="PackedScene" uid="uid://bufghfink04vy" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-roof.glb" id="46_4yiu0"]
+[ext_resource type="PackedScene" uid="uid://vkbsaevio45e" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-top-color.glb" id="47_t56dk"]
+[ext_resource type="PackedScene" uid="uid://yfcy57nv0hxc" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-top-roof-high-windows.glb" id="48_gtf4w"]
+[ext_resource type="PackedScene" uid="uid://77pmx5qusr8u" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-top-roof-high.glb" id="49_sij41"]
+[ext_resource type="PackedScene" uid="uid://bhusw1ykstr0n" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-top-roof-rounded.glb" id="50_tl0mh"]
+[ext_resource type="PackedScene" uid="uid://c1jfbhadf1w1k" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-top-roof.glb" id="51_838ub"]
+[ext_resource type="PackedScene" uid="uid://c1xmg20b6ajvi" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square-top.glb" id="52_xk3m5"]
+[ext_resource type="PackedScene" uid="uid://c7jq8thu3xp0r" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-square.glb" id="53_blee4"]
+[ext_resource type="PackedScene" uid="uid://bhg00ogypim7f" path="res://Assets/kenney_castle-kit/Models/GLB format/tower-top.glb" id="54_01ncd"]
+[ext_resource type="PackedScene" uid="uid://dp3tlha8pjvgc" path="res://Assets/kenney_castle-kit/Models/GLB format/tree-large.glb" id="55_w0xm7"]
+[ext_resource type="PackedScene" uid="uid://b6p42tixawbkn" path="res://Assets/kenney_castle-kit/Models/GLB format/tree-log.glb" id="56_c00qw"]
+[ext_resource type="PackedScene" uid="uid://cf017up56qd6g" path="res://Assets/kenney_castle-kit/Models/GLB format/tree-small.glb" id="57_k7ppg"]
+[ext_resource type="PackedScene" uid="uid://shjvygj3klas" path="res://Assets/kenney_castle-kit/Models/GLB format/tree-trunk.glb" id="58_jvr84"]
+[ext_resource type="PackedScene" uid="uid://caaqqqjfoxbfu" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-corner-half-tower.glb" id="59_8xmr8"]
+[ext_resource type="PackedScene" uid="uid://cxl6kk0v08lq0" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-corner-half.glb" id="60_u86k3"]
+[ext_resource type="PackedScene" uid="uid://mggfus6l1q2g" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-corner-slant.glb" id="61_bebn1"]
+[ext_resource type="PackedScene" uid="uid://3peam2b1fpll" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-corner.glb" id="62_hn65k"]
+[ext_resource type="PackedScene" uid="uid://cp00aoaqnnrrm" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-doorway.glb" id="63_3mmg5"]
+[ext_resource type="PackedScene" uid="uid://bbj6uukp2yag7" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-half-modular.glb" id="64_i1s0y"]
+[ext_resource type="PackedScene" uid="uid://bhvrwexgb4l7g" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-half.glb" id="65_lum2v"]
+[ext_resource type="PackedScene" uid="uid://ggcs4wd0ci01" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-narrow-corner.glb" id="66_xp6id"]
+[ext_resource type="PackedScene" uid="uid://sckc6nwxyu38" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-narrow-gate.glb" id="67_2rrdb"]
+[ext_resource type="PackedScene" uid="uid://ds1kkvcmxfd0a" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-narrow-stairs-rail.glb" id="68_uuv1r"]
+[ext_resource type="PackedScene" uid="uid://bj6whm7e4siwv" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-narrow-stairs.glb" id="69_4cnr7"]
+[ext_resource type="PackedScene" uid="uid://dtsiy81idbvjm" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-narrow-wood-fence.glb" id="70_w8qxh"]
+[ext_resource type="PackedScene" uid="uid://du6pd6c320wmm" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-narrow-wood.glb" id="71_cod8d"]
+[ext_resource type="PackedScene" uid="uid://dhhm31or00pta" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-narrow.glb" id="72_yjhhn"]
+[ext_resource type="PackedScene" uid="uid://bxm1q3kq8kpvb" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-pillar.glb" id="73_3bjrp"]
+[ext_resource type="PackedScene" uid="uid://b10hgq6sv1ajl" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-stud.glb" id="74_ixbqx"]
+[ext_resource type="PackedScene" uid="uid://b28mmdwjeso3k" path="res://Assets/kenney_castle-kit/Models/GLB format/wall-to-narrow.glb" id="75_d601a"]
+
+[node name="Castle Tiles" type="Node3D"]
+
+[node name="bridge-draw2" parent="." instance=ExtResource("1_3u862")]
+
+[node name="bridge-straight-pillar2" parent="." instance=ExtResource("2_r4qjd")]
+
+[node name="bridge-straight2" parent="." instance=ExtResource("3_kbje4")]
+
+[node name="door2" parent="." instance=ExtResource("4_ko6yi")]
+
+[node name="flag-banner-long2" parent="." instance=ExtResource("5_5bphv")]
+
+[node name="flag-banner-short2" parent="." instance=ExtResource("6_4vscj")]
+
+[node name="flag-pennant2" parent="." instance=ExtResource("7_umdth")]
+
+[node name="flag-wide2" parent="." instance=ExtResource("8_nmllv")]
+
+[node name="flag2" parent="." instance=ExtResource("9_cvt45")]
+
+[node name="gate2" parent="." instance=ExtResource("10_n3mel")]
+
+[node name="ground-hills2" parent="." instance=ExtResource("11_snhba")]
+
+[node name="ground2" parent="." instance=ExtResource("12_4jqoc")]
+
+[node name="metal-gate2" parent="." instance=ExtResource("13_w3icd")]
+
+[node name="rocks-large2" parent="." instance=ExtResource("14_j6k5u")]
+
+[node name="rocks-small2" parent="." instance=ExtResource("15_axtov")]
+
+[node name="siege-ballista-demolished2" parent="." instance=ExtResource("16_m68oi")]
+
+[node name="siege-ballista2" parent="." instance=ExtResource("17_gp6qe")]
+
+[node name="siege-catapult-demolished2" parent="." instance=ExtResource("18_q7gtr")]
+
+[node name="siege-catapult2" parent="." instance=ExtResource("19_okspj")]
+
+[node name="siege-ram-demolished2" parent="." instance=ExtResource("20_47xpm")]
+
+[node name="siege-ram2" parent="." instance=ExtResource("21_8crtd")]
+
+[node name="siege-tower-demolished2" parent="." instance=ExtResource("22_dkdqx")]
+
+[node name="siege-tower2" parent="." instance=ExtResource("23_xiqde")]
+
+[node name="siege-trebuchet-demolished2" parent="." instance=ExtResource("24_c6aql")]
+
+[node name="siege-trebuchet2" parent="." instance=ExtResource("25_fn61q")]
+
+[node name="stairs-stone-square2" parent="." instance=ExtResource("26_brjif")]
+
+[node name="stairs-stone2" parent="." instance=ExtResource("27_smnfu")]
+
+[node name="tower-base2" parent="." instance=ExtResource("28_1r8fk")]
+
+[node name="tower-hexagon-base2" parent="." instance=ExtResource("29_ujo3p")]
+
+[node name="tower-hexagon-mid2" parent="." instance=ExtResource("30_bx3jk")]
+
+[node name="tower-hexagon-roof-secondary2" parent="." instance=ExtResource("31_wc158")]
+
+[node name="tower-hexagon-roof2" parent="." instance=ExtResource("32_exs3l")]
+
+[node name="tower-hexagon-top-wood2" parent="." instance=ExtResource("33_atms1")]
+
+[node name="tower-hexagon-top2" parent="." instance=ExtResource("34_ven4e")]
+
+[node name="tower-slant-roof2" parent="." instance=ExtResource("35_7cmyy")]
+
+[node name="tower-square-arch2" parent="." instance=ExtResource("36_37nvs")]
+
+[node name="tower-square-base-border2" parent="." instance=ExtResource("37_yoj4d")]
+
+[node name="tower-square-base-color2" parent="." instance=ExtResource("38_8q0k3")]
+
+[node name="tower-square-base2" parent="." instance=ExtResource("39_mi3jh")]
+
+[node name="tower-square-mid-color2" parent="." instance=ExtResource("40_8ur8l")]
+
+[node name="tower-square-mid-door2" parent="." instance=ExtResource("41_sc4cl")]
+
+[node name="tower-square-mid-open-simple2" parent="." instance=ExtResource("42_vvgyk")]
+
+[node name="tower-square-mid-open2" parent="." instance=ExtResource("43_8a84e")]
+
+[node name="tower-square-mid-windows2" parent="." instance=ExtResource("44_xgrdu")]
+
+[node name="tower-square-mid2" parent="." instance=ExtResource("45_sroce")]
+
+[node name="tower-square-roof2" parent="." instance=ExtResource("46_4yiu0")]
+
+[node name="tower-square-top-color2" parent="." instance=ExtResource("47_t56dk")]
+
+[node name="tower-square-top-roof-high-windows2" parent="." instance=ExtResource("48_gtf4w")]
+
+[node name="tower-square-top-roof-high2" parent="." instance=ExtResource("49_sij41")]
+
+[node name="tower-square-top-roof-rounded2" parent="." instance=ExtResource("50_tl0mh")]
+
+[node name="tower-square-top-roof2" parent="." instance=ExtResource("51_838ub")]
+
+[node name="tower-square-top2" parent="." instance=ExtResource("52_xk3m5")]
+
+[node name="tower-square2" parent="." instance=ExtResource("53_blee4")]
+
+[node name="tower-top2" parent="." instance=ExtResource("54_01ncd")]
+
+[node name="tree-large2" parent="." instance=ExtResource("55_w0xm7")]
+
+[node name="tree-log2" parent="." instance=ExtResource("56_c00qw")]
+
+[node name="tree-small2" parent="." instance=ExtResource("57_k7ppg")]
+
+[node name="tree-trunk2" parent="." instance=ExtResource("58_jvr84")]
+
+[node name="wall-corner-half-tower2" parent="." instance=ExtResource("59_8xmr8")]
+
+[node name="wall-corner-half2" parent="." instance=ExtResource("60_u86k3")]
+
+[node name="wall-corner-slant2" parent="." instance=ExtResource("61_bebn1")]
+
+[node name="wall-corner2" parent="." instance=ExtResource("62_hn65k")]
+
+[node name="wall-doorway2" parent="." instance=ExtResource("63_3mmg5")]
+
+[node name="wall-half-modular2" parent="." instance=ExtResource("64_i1s0y")]
+
+[node name="wall-half2" parent="." instance=ExtResource("65_lum2v")]
+
+[node name="wall-narrow-corner2" parent="." instance=ExtResource("66_xp6id")]
+
+[node name="wall-narrow-gate2" parent="." instance=ExtResource("67_2rrdb")]
+
+[node name="wall-narrow-stairs-rail2" parent="." instance=ExtResource("68_uuv1r")]
+
+[node name="wall-narrow-stairs2" parent="." instance=ExtResource("69_4cnr7")]
+
+[node name="wall-narrow-wood-fence2" parent="." instance=ExtResource("70_w8qxh")]
+
+[node name="wall-narrow-wood2" parent="." instance=ExtResource("71_cod8d")]
+
+[node name="wall-narrow2" parent="." instance=ExtResource("72_yjhhn")]
+
+[node name="wall-pillar2" parent="." instance=ExtResource("73_3bjrp")]
+
+[node name="wall-stud2" parent="." instance=ExtResource("74_ixbqx")]
+
+[node name="wall-to-narrow2" parent="." instance=ExtResource("75_d601a")]

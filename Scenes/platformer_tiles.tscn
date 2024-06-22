@@ -1,0 +1,430 @@
+[gd_scene load_steps=143 format=3 uid="uid://xr313im6nxhc"]
+
+[ext_resource type="PackedScene" uid="uid://d3dtjbk7ng4rm" path="res://Assets/kenney_platformer-kit/Models/GLB format/arrow.glb" id="1_tjyw8"]
+[ext_resource type="PackedScene" uid="uid://cpfybay1w3usa" path="res://Assets/kenney_platformer-kit/Models/GLB format/arrows.glb" id="2_bpjt1"]
+[ext_resource type="PackedScene" uid="uid://c8q4hvndngb2c" path="res://Assets/kenney_platformer-kit/Models/GLB format/barrel.glb" id="3_hasii"]
+[ext_resource type="PackedScene" uid="uid://cudg26fqd184b" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-corner-low.glb" id="4_yaomr"]
+[ext_resource type="PackedScene" uid="uid://bqfxmlysiltv7" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-corner-overhang-low.glb" id="5_w0tti"]
+[ext_resource type="PackedScene" uid="uid://cesb0i4geg4gy" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-corner-overhang.glb" id="6_5nhu4"]
+[ext_resource type="PackedScene" uid="uid://cnwmq42l3l12t" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-corner.glb" id="7_3qenx"]
+[ext_resource type="PackedScene" uid="uid://bwa8p26uq053o" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-curve-half.glb" id="8_ptb6r"]
+[ext_resource type="PackedScene" uid="uid://idqsshw84qbt" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-curve-low.glb" id="9_q5rb3"]
+[ext_resource type="PackedScene" uid="uid://cltcrrqy5husi" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-curve.glb" id="10_dfqd3"]
+[ext_resource type="PackedScene" uid="uid://dcqthsqfx3qkp" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-edge.glb" id="11_3aq3b"]
+[ext_resource type="PackedScene" uid="uid://ca3lab5gvek4t" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-hexagon.glb" id="12_dnb4q"]
+[ext_resource type="PackedScene" uid="uid://cnjee2odkvfqe" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-large-slope-narrow.glb" id="13_ik4iw"]
+[ext_resource type="PackedScene" uid="uid://bk1lkqx1nr0hx" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-large-slope-steep-narrow.glb" id="14_p41qp"]
+[ext_resource type="PackedScene" uid="uid://8rpfffwe4smh" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-large-slope-steep.glb" id="15_bpxaa"]
+[ext_resource type="PackedScene" uid="uid://c1j0qyhe73b7e" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-large-slope.glb" id="16_fd2id"]
+[ext_resource type="PackedScene" uid="uid://1e8tjkfxpwqc" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-large-tall.glb" id="17_b4rym"]
+[ext_resource type="PackedScene" uid="uid://chuq275elby5x" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-large.glb" id="18_bm4r4"]
+[ext_resource type="PackedScene" uid="uid://pqfpia57p8cf" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-long.glb" id="19_4ixuk"]
+[ext_resource type="PackedScene" uid="uid://66apcwekxwua" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-low-hexagon.glb" id="20_xudg4"]
+[ext_resource type="PackedScene" uid="uid://cu3qn2ijlbrn4" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-low-large.glb" id="21_pjpj5"]
+[ext_resource type="PackedScene" uid="uid://cudcsvycbxs76" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-low-long.glb" id="22_dm68u"]
+[ext_resource type="PackedScene" uid="uid://c763m4vu5lny8" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-low-narrow.glb" id="23_bnu8i"]
+[ext_resource type="PackedScene" uid="uid://bgluiosu3gxpm" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-low.glb" id="24_cht0i"]
+[ext_resource type="PackedScene" uid="uid://b6n63buxf0dkc" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-narrow.glb" id="25_lrnd2"]
+[ext_resource type="PackedScene" uid="uid://bxy0db7aw4054" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-corner.glb" id="26_cct6f"]
+[ext_resource type="PackedScene" uid="uid://ccajc2k4aoh4v" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-edge.glb" id="27_vcwj5"]
+[ext_resource type="PackedScene" uid="uid://cgsm3lt0cf8wd" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-hexagon.glb" id="28_gakbe"]
+[ext_resource type="PackedScene" uid="uid://c4qnuqoof3vmy" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-large-slope-narrow.glb" id="29_yb2lu"]
+[ext_resource type="PackedScene" uid="uid://ktar86v8duvs" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-large-slope-steep-narrow.glb" id="30_m4ux8"]
+[ext_resource type="PackedScene" uid="uid://bbcqm27cpgvwx" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-large-slope-steep.glb" id="31_s64ht"]
+[ext_resource type="PackedScene" uid="uid://c1uha8hfm57rj" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-large-slope.glb" id="32_me5fp"]
+[ext_resource type="PackedScene" uid="uid://c3141rafqrrkw" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-large-tall.glb" id="33_ur3pr"]
+[ext_resource type="PackedScene" uid="uid://c6yjexxes6go0" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-large.glb" id="34_kraco"]
+[ext_resource type="PackedScene" uid="uid://bpx670dl2udar" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-long.glb" id="35_3rvi4"]
+[ext_resource type="PackedScene" uid="uid://b3p5ffii72d2c" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-low-hexagon.glb" id="36_yspuj"]
+[ext_resource type="PackedScene" uid="uid://dltbv5aw7dcdh" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-low-large.glb" id="37_5wd70"]
+[ext_resource type="PackedScene" uid="uid://casa3po0bor8k" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-low-long.glb" id="38_6vov2"]
+[ext_resource type="PackedScene" uid="uid://dpobxon7g4vcw" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-low-narrow.glb" id="39_5i8op"]
+[ext_resource type="PackedScene" uid="uid://bdol8wr6bg54m" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-low.glb" id="40_llhl6"]
+[ext_resource type="PackedScene" uid="uid://cp83ge8pi8pao" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass-overhang-narrow.glb" id="41_cmalq"]
+[ext_resource type="PackedScene" uid="uid://ct0wt3xdbi58u" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-grass.glb" id="42_s8fty"]
+[ext_resource type="PackedScene" uid="uid://bxcaqlaoyf7uu" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-moving-blue.glb" id="43_opdgw"]
+[ext_resource type="PackedScene" uid="uid://duwo3bw37ftjc" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-moving-large.glb" id="44_up6js"]
+[ext_resource type="PackedScene" uid="uid://dyucpky3wo112" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-moving.glb" id="45_kjfur"]
+[ext_resource type="PackedScene" uid="uid://b4p4e0kuuv07x" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-corner-low.glb" id="46_40x8g"]
+[ext_resource type="PackedScene" uid="uid://cj3p1jn2payqf" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-corner-overhang-low.glb" id="47_fc0jf"]
+[ext_resource type="PackedScene" uid="uid://d0yf8lbeykei5" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-corner-overhang.glb" id="48_bsewj"]
+[ext_resource type="PackedScene" uid="uid://cvataxltiovu" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-corner.glb" id="49_rbj14"]
+[ext_resource type="PackedScene" uid="uid://cesiv33hhudxo" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-curve-half.glb" id="50_pfoli"]
+[ext_resource type="PackedScene" uid="uid://b7f1so33nmrk8" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-curve-low.glb" id="51_4t8iw"]
+[ext_resource type="PackedScene" uid="uid://dclm7t88u6qdy" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-curve.glb" id="52_na506"]
+[ext_resource type="PackedScene" uid="uid://cdqm54kq58utn" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-edge.glb" id="53_8ow1w"]
+[ext_resource type="PackedScene" uid="uid://bhk2h5okx5n1e" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-hexagon.glb" id="54_yf2hs"]
+[ext_resource type="PackedScene" uid="uid://cadb014iwgt0w" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-large-slope-narrow.glb" id="55_ijg0v"]
+[ext_resource type="PackedScene" uid="uid://dh8bxx08rjsaa" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-large-slope-steep-narrow.glb" id="56_80hrr"]
+[ext_resource type="PackedScene" uid="uid://bmwpv3i0gay2c" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-large-slope-steep.glb" id="57_oux4t"]
+[ext_resource type="PackedScene" uid="uid://c0d517phk1imh" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-large-slope.glb" id="58_sdqil"]
+[ext_resource type="PackedScene" uid="uid://bwbse2fxrpa5a" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-large-tall.glb" id="59_578fv"]
+[ext_resource type="PackedScene" uid="uid://c2aynk6fay0t3" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-large.glb" id="60_qkgyt"]
+[ext_resource type="PackedScene" uid="uid://b3u1gu13qhmmt" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-long.glb" id="61_mdmod"]
+[ext_resource type="PackedScene" uid="uid://byqhj2mxbpx3y" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-low-hexagon.glb" id="62_nu5wu"]
+[ext_resource type="PackedScene" uid="uid://c3qpbtggf6sx" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-low-large.glb" id="63_ca1ut"]
+[ext_resource type="PackedScene" uid="uid://dd6ublkksaluj" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-low-long.glb" id="64_sl6ov"]
+[ext_resource type="PackedScene" uid="uid://bcby8bim5bogi" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-low-narrow.glb" id="65_cgv2w"]
+[ext_resource type="PackedScene" uid="uid://cv33qgq6606l2" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-low.glb" id="66_oi27a"]
+[ext_resource type="PackedScene" uid="uid://cqlxgyumvu2lt" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-narrow.glb" id="67_hflwi"]
+[ext_resource type="PackedScene" uid="uid://c6al2g1sxpgks" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-corner.glb" id="68_d4tix"]
+[ext_resource type="PackedScene" uid="uid://kxruk80lo73b" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-edge.glb" id="69_5xo5j"]
+[ext_resource type="PackedScene" uid="uid://da3w0bfqadbhm" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-hexagon.glb" id="70_sshfh"]
+[ext_resource type="PackedScene" uid="uid://py6c0q02m4di" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-large-slope-narrow.glb" id="71_fy61j"]
+[ext_resource type="PackedScene" uid="uid://bl7h2gc58nauv" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-large-slope-steep-narrow.glb" id="72_ilqmg"]
+[ext_resource type="PackedScene" uid="uid://dd5mg8fwq3ppr" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-large-slope-steep.glb" id="73_cdx2q"]
+[ext_resource type="PackedScene" uid="uid://c5jynavat7gkl" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-large-slope.glb" id="74_2jh4u"]
+[ext_resource type="PackedScene" uid="uid://dioyhjeocjctm" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-large-tall.glb" id="75_befs4"]
+[ext_resource type="PackedScene" uid="uid://dmfy6qba37vq4" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-large.glb" id="76_eyy7r"]
+[ext_resource type="PackedScene" uid="uid://n05v2jchxmo7" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-long.glb" id="77_jw5jx"]
+[ext_resource type="PackedScene" uid="uid://7i1a240aov1e" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-low-hexagon.glb" id="78_ccvy4"]
+[ext_resource type="PackedScene" uid="uid://bhd35315tvbl1" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-low-large.glb" id="79_fespy"]
+[ext_resource type="PackedScene" uid="uid://cf008opeu7dau" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-low-long.glb" id="80_dtukl"]
+[ext_resource type="PackedScene" uid="uid://c04kqyprgve0d" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-low-narrow.glb" id="81_b21ew"]
+[ext_resource type="PackedScene" uid="uid://bsojuy8ol8bcs" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-low.glb" id="82_qyuio"]
+[ext_resource type="PackedScene" uid="uid://dy2f8sgt1gvw3" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow-overhang-narrow.glb" id="83_088vo"]
+[ext_resource type="PackedScene" uid="uid://bab644l12ri2e" path="res://Assets/kenney_platformer-kit/Models/GLB format/block-snow.glb" id="84_gqbvf"]
+[ext_resource type="PackedScene" uid="uid://pi67iqyecn4b" path="res://Assets/kenney_platformer-kit/Models/GLB format/bomb.glb" id="85_ttw8n"]
+[ext_resource type="PackedScene" uid="uid://d4k6pk1nsrfu4" path="res://Assets/kenney_platformer-kit/Models/GLB format/button-round.glb" id="86_lyqtf"]
+[ext_resource type="PackedScene" uid="uid://biby16gl7mgbu" path="res://Assets/kenney_platformer-kit/Models/GLB format/button-square.glb" id="87_6ptei"]
+[ext_resource type="PackedScene" uid="uid://l6gyuns6nyvu" path="res://Assets/kenney_platformer-kit/Models/GLB format/chest.glb" id="88_2ey21"]
+[ext_resource type="PackedScene" uid="uid://clhahfqg14gx2" path="res://Assets/kenney_platformer-kit/Models/GLB format/coin-bronze.glb" id="89_ouwej"]
+[ext_resource type="PackedScene" uid="uid://b3donkj35pqno" path="res://Assets/kenney_platformer-kit/Models/GLB format/coin-gold.glb" id="90_dkquo"]
+[ext_resource type="PackedScene" uid="uid://n0pjufcffuk" path="res://Assets/kenney_platformer-kit/Models/GLB format/coin-silver.glb" id="91_eum73"]
+[ext_resource type="PackedScene" uid="uid://bq8ktyqopcxot" path="res://Assets/kenney_platformer-kit/Models/GLB format/crate-item-strong.glb" id="92_edv82"]
+[ext_resource type="PackedScene" uid="uid://cuwreprcmp4ku" path="res://Assets/kenney_platformer-kit/Models/GLB format/crate-item.glb" id="93_jlop2"]
+[ext_resource type="PackedScene" uid="uid://dvcfp3ntwy55c" path="res://Assets/kenney_platformer-kit/Models/GLB format/crate-strong.glb" id="94_36xyg"]
+[ext_resource type="PackedScene" uid="uid://c72ulld8hy4tl" path="res://Assets/kenney_platformer-kit/Models/GLB format/crate.glb" id="95_oe7pg"]
+[ext_resource type="PackedScene" uid="uid://vs5gblkav8yw" path="res://Assets/kenney_platformer-kit/Models/GLB format/door-large-open.glb" id="96_smcex"]
+[ext_resource type="PackedScene" uid="uid://ddls0n36s3uic" path="res://Assets/kenney_platformer-kit/Models/GLB format/door-open.glb" id="97_qbdbx"]
+[ext_resource type="PackedScene" uid="uid://cxcp4kwndqs7f" path="res://Assets/kenney_platformer-kit/Models/GLB format/door-rotate-large.glb" id="98_t3w7l"]
+[ext_resource type="PackedScene" uid="uid://dmnl7k4rq43pv" path="res://Assets/kenney_platformer-kit/Models/GLB format/door-rotate.glb" id="99_v5yyt"]
+[ext_resource type="PackedScene" uid="uid://cmpkuspp6cl3r" path="res://Assets/kenney_platformer-kit/Models/GLB format/fence-broken.glb" id="100_vepqm"]
+[ext_resource type="PackedScene" uid="uid://hiy1w0uyglsh" path="res://Assets/kenney_platformer-kit/Models/GLB format/fence-corner-curved.glb" id="101_4qq2l"]
+[ext_resource type="PackedScene" uid="uid://b7p2757ldyhoj" path="res://Assets/kenney_platformer-kit/Models/GLB format/fence-corner.glb" id="102_yfdib"]
+[ext_resource type="PackedScene" uid="uid://dqyah0svympjx" path="res://Assets/kenney_platformer-kit/Models/GLB format/fence-low-broken.glb" id="103_4var7"]
+[ext_resource type="PackedScene" uid="uid://dikydfn81gn7v" path="res://Assets/kenney_platformer-kit/Models/GLB format/fence-low-corner-curved.glb" id="104_qpv7v"]
+[ext_resource type="PackedScene" uid="uid://d3xwyf01admwy" path="res://Assets/kenney_platformer-kit/Models/GLB format/fence-low-corner.glb" id="105_dl1gr"]
+[ext_resource type="PackedScene" uid="uid://cu32ockmp4aar" path="res://Assets/kenney_platformer-kit/Models/GLB format/fence-low-straight.glb" id="106_ey62q"]
+[ext_resource type="PackedScene" uid="uid://478s2ky1wh8i" path="res://Assets/kenney_platformer-kit/Models/GLB format/fence-straight.glb" id="107_w04ia"]
+[ext_resource type="PackedScene" uid="uid://cpc64acs1o12j" path="res://Assets/kenney_platformer-kit/Models/GLB format/flag.glb" id="108_wg26f"]
+[ext_resource type="PackedScene" uid="uid://btwxtld6h8i2x" path="res://Assets/kenney_platformer-kit/Models/GLB format/flowers-tall.glb" id="109_uwmba"]
+[ext_resource type="PackedScene" uid="uid://d1hslwbtrsgte" path="res://Assets/kenney_platformer-kit/Models/GLB format/flowers.glb" id="110_k7umu"]
+[ext_resource type="PackedScene" uid="uid://ruicm075eqio" path="res://Assets/kenney_platformer-kit/Models/GLB format/grass.glb" id="111_otuk4"]
+[ext_resource type="PackedScene" uid="uid://de55c43w6tjjw" path="res://Assets/kenney_platformer-kit/Models/GLB format/heart.glb" id="112_spsg2"]
+[ext_resource type="PackedScene" uid="uid://dcjsvnupdebcc" path="res://Assets/kenney_platformer-kit/Models/GLB format/hedge-corner.glb" id="113_abqer"]
+[ext_resource type="PackedScene" uid="uid://c3iwrhbeywkk0" path="res://Assets/kenney_platformer-kit/Models/GLB format/hedge.glb" id="114_7dsk1"]
+[ext_resource type="PackedScene" uid="uid://dvn5hta4uube6" path="res://Assets/kenney_platformer-kit/Models/GLB format/jewel.glb" id="115_acoa1"]
+[ext_resource type="PackedScene" uid="uid://b1eaapcbe7fam" path="res://Assets/kenney_platformer-kit/Models/GLB format/key.glb" id="116_sjpsu"]
+[ext_resource type="PackedScene" uid="uid://cnbtdrn2idqe1" path="res://Assets/kenney_platformer-kit/Models/GLB format/ladder-broken.glb" id="117_11l5w"]
+[ext_resource type="PackedScene" uid="uid://bu1wfthfxkhai" path="res://Assets/kenney_platformer-kit/Models/GLB format/ladder-long.glb" id="118_j8lid"]
+[ext_resource type="PackedScene" uid="uid://dgqn3rosilub1" path="res://Assets/kenney_platformer-kit/Models/GLB format/ladder.glb" id="119_blbde"]
+[ext_resource type="PackedScene" uid="uid://du4rofasckc7g" path="res://Assets/kenney_platformer-kit/Models/GLB format/lever.glb" id="120_syhqi"]
+[ext_resource type="PackedScene" uid="uid://bhm2oxl6p77vw" path="res://Assets/kenney_platformer-kit/Models/GLB format/lock.glb" id="121_5o2et"]
+[ext_resource type="PackedScene" uid="uid://c0rebftt2gr75" path="res://Assets/kenney_platformer-kit/Models/GLB format/mushrooms.glb" id="122_a2h8f"]
+[ext_resource type="PackedScene" uid="uid://dg7sdnuoeqg2l" path="res://Assets/kenney_platformer-kit/Models/GLB format/plant.glb" id="123_dd0at"]
+[ext_resource type="PackedScene" uid="uid://rxdsdhe3tr5r" path="res://Assets/kenney_platformer-kit/Models/GLB format/platform-fortified.glb" id="124_pytta"]
+[ext_resource type="PackedScene" uid="uid://b0kdcw1s06qs6" path="res://Assets/kenney_platformer-kit/Models/GLB format/platform-overhang.glb" id="125_mm3e3"]
+[ext_resource type="PackedScene" uid="uid://dhi23fs4fjcxw" path="res://Assets/kenney_platformer-kit/Models/GLB format/platform-ramp.glb" id="126_p32im"]
+[ext_resource type="PackedScene" uid="uid://dum5pgc1cpo07" path="res://Assets/kenney_platformer-kit/Models/GLB format/platform.glb" id="127_5083t"]
+[ext_resource type="PackedScene" uid="uid://bs6cewuidwixe" path="res://Assets/kenney_platformer-kit/Models/GLB format/poles.glb" id="128_dpwgc"]
+[ext_resource type="PackedScene" uid="uid://b0ubhjdkb7o2y" path="res://Assets/kenney_platformer-kit/Models/GLB format/rocks.glb" id="129_oi0hn"]
+[ext_resource type="PackedScene" uid="uid://b6w5jo1x5rxsp" path="res://Assets/kenney_platformer-kit/Models/GLB format/saw.glb" id="130_3f8mm"]
+[ext_resource type="PackedScene" uid="uid://dk1yfr6eeyddh" path="res://Assets/kenney_platformer-kit/Models/GLB format/sign.glb" id="131_mmbki"]
+[ext_resource type="PackedScene" uid="uid://c5h1f4rwyllag" path="res://Assets/kenney_platformer-kit/Models/GLB format/spike-block-wide.glb" id="132_5ho4w"]
+[ext_resource type="PackedScene" uid="uid://paq5ka28lt8x" path="res://Assets/kenney_platformer-kit/Models/GLB format/spike-block.glb" id="133_dn8nn"]
+[ext_resource type="PackedScene" uid="uid://cf381w21opxhs" path="res://Assets/kenney_platformer-kit/Models/GLB format/stones.glb" id="134_x02ji"]
+[ext_resource type="PackedScene" uid="uid://nmbok24dlgve" path="res://Assets/kenney_platformer-kit/Models/GLB format/trap-spikes-large.glb" id="135_xqge3"]
+[ext_resource type="PackedScene" uid="uid://d15qstb414rws" path="res://Assets/kenney_platformer-kit/Models/GLB format/trap-spikes.glb" id="136_2xsjd"]
+[ext_resource type="PackedScene" uid="uid://dxcmolbu6pykf" path="res://Assets/kenney_platformer-kit/Models/GLB format/tree-pine-small.glb" id="137_2u8ed"]
+[ext_resource type="PackedScene" uid="uid://wmhw14xflmed" path="res://Assets/kenney_platformer-kit/Models/GLB format/tree-pine-snow-small.glb" id="138_tq4oi"]
+[ext_resource type="PackedScene" uid="uid://bto28bnklsblb" path="res://Assets/kenney_platformer-kit/Models/GLB format/tree-pine-snow.glb" id="139_3kmu2"]
+[ext_resource type="PackedScene" uid="uid://bbrblyvrb6v6t" path="res://Assets/kenney_platformer-kit/Models/GLB format/tree-pine.glb" id="140_6twao"]
+[ext_resource type="PackedScene" uid="uid://b2g5covb2vp5e" path="res://Assets/kenney_platformer-kit/Models/GLB format/tree-snow.glb" id="141_3o820"]
+[ext_resource type="PackedScene" uid="uid://b8bbj5j2q7sed" path="res://Assets/kenney_platformer-kit/Models/GLB format/tree.glb" id="142_ivxh0"]
+
+[node name="Platformer Tiles" type="Node3D"]
+
+[node name="arrow2" parent="." instance=ExtResource("1_tjyw8")]
+
+[node name="arrows2" parent="." instance=ExtResource("2_bpjt1")]
+
+[node name="barrel2" parent="." instance=ExtResource("3_hasii")]
+
+[node name="block-grass-corner-low2" parent="." instance=ExtResource("4_yaomr")]
+
+[node name="block-grass-corner-overhang-low2" parent="." instance=ExtResource("5_w0tti")]
+
+[node name="block-grass-corner-overhang2" parent="." instance=ExtResource("6_5nhu4")]
+
+[node name="block-grass-corner2" parent="." instance=ExtResource("7_3qenx")]
+
+[node name="block-grass-curve-half2" parent="." instance=ExtResource("8_ptb6r")]
+
+[node name="block-grass-curve-low2" parent="." instance=ExtResource("9_q5rb3")]
+
+[node name="block-grass-curve2" parent="." instance=ExtResource("10_dfqd3")]
+
+[node name="block-grass-edge2" parent="." instance=ExtResource("11_3aq3b")]
+
+[node name="block-grass-hexagon2" parent="." instance=ExtResource("12_dnb4q")]
+
+[node name="block-grass-large-slope-narrow2" parent="." instance=ExtResource("13_ik4iw")]
+
+[node name="block-grass-large-slope-steep-narrow2" parent="." instance=ExtResource("14_p41qp")]
+
+[node name="block-grass-large-slope-steep2" parent="." instance=ExtResource("15_bpxaa")]
+
+[node name="block-grass-large-slope2" parent="." instance=ExtResource("16_fd2id")]
+
+[node name="block-grass-large-tall2" parent="." instance=ExtResource("17_b4rym")]
+
+[node name="block-grass-large2" parent="." instance=ExtResource("18_bm4r4")]
+
+[node name="block-grass-long2" parent="." instance=ExtResource("19_4ixuk")]
+
+[node name="block-grass-low-hexagon2" parent="." instance=ExtResource("20_xudg4")]
+
+[node name="block-grass-low-large2" parent="." instance=ExtResource("21_pjpj5")]
+
+[node name="block-grass-low-long2" parent="." instance=ExtResource("22_dm68u")]
+
+[node name="block-grass-low-narrow2" parent="." instance=ExtResource("23_bnu8i")]
+
+[node name="block-grass-low2" parent="." instance=ExtResource("24_cht0i")]
+
+[node name="block-grass-narrow2" parent="." instance=ExtResource("25_lrnd2")]
+
+[node name="block-grass-overhang-corner2" parent="." instance=ExtResource("26_cct6f")]
+
+[node name="block-grass-overhang-edge2" parent="." instance=ExtResource("27_vcwj5")]
+
+[node name="block-grass-overhang-hexagon2" parent="." instance=ExtResource("28_gakbe")]
+
+[node name="block-grass-overhang-large-slope-narrow2" parent="." instance=ExtResource("29_yb2lu")]
+
+[node name="block-grass-overhang-large-slope-steep-narrow2" parent="." instance=ExtResource("30_m4ux8")]
+
+[node name="block-grass-overhang-large-slope-steep2" parent="." instance=ExtResource("31_s64ht")]
+
+[node name="block-grass-overhang-large-slope2" parent="." instance=ExtResource("32_me5fp")]
+
+[node name="block-grass-overhang-large-tall2" parent="." instance=ExtResource("33_ur3pr")]
+
+[node name="block-grass-overhang-large2" parent="." instance=ExtResource("34_kraco")]
+
+[node name="block-grass-overhang-long2" parent="." instance=ExtResource("35_3rvi4")]
+
+[node name="block-grass-overhang-low-hexagon2" parent="." instance=ExtResource("36_yspuj")]
+
+[node name="block-grass-overhang-low-large2" parent="." instance=ExtResource("37_5wd70")]
+
+[node name="block-grass-overhang-low-long2" parent="." instance=ExtResource("38_6vov2")]
+
+[node name="block-grass-overhang-low-narrow2" parent="." instance=ExtResource("39_5i8op")]
+
+[node name="block-grass-overhang-low2" parent="." instance=ExtResource("40_llhl6")]
+
+[node name="block-grass-overhang-narrow2" parent="." instance=ExtResource("41_cmalq")]
+
+[node name="block-grass2" parent="." instance=ExtResource("42_s8fty")]
+
+[node name="block-moving-blue2" parent="." instance=ExtResource("43_opdgw")]
+
+[node name="block-moving-large2" parent="." instance=ExtResource("44_up6js")]
+
+[node name="block-moving2" parent="." instance=ExtResource("45_kjfur")]
+
+[node name="block-snow-corner-low2" parent="." instance=ExtResource("46_40x8g")]
+
+[node name="block-snow-corner-overhang-low2" parent="." instance=ExtResource("47_fc0jf")]
+
+[node name="block-snow-corner-overhang2" parent="." instance=ExtResource("48_bsewj")]
+
+[node name="block-snow-corner2" parent="." instance=ExtResource("49_rbj14")]
+
+[node name="block-snow-curve-half2" parent="." instance=ExtResource("50_pfoli")]
+
+[node name="block-snow-curve-low2" parent="." instance=ExtResource("51_4t8iw")]
+
+[node name="block-snow-curve2" parent="." instance=ExtResource("52_na506")]
+
+[node name="block-snow-edge2" parent="." instance=ExtResource("53_8ow1w")]
+
+[node name="block-snow-hexagon2" parent="." instance=ExtResource("54_yf2hs")]
+
+[node name="block-snow-large-slope-narrow2" parent="." instance=ExtResource("55_ijg0v")]
+
+[node name="block-snow-large-slope-steep-narrow2" parent="." instance=ExtResource("56_80hrr")]
+
+[node name="block-snow-large-slope-steep2" parent="." instance=ExtResource("57_oux4t")]
+
+[node name="block-snow-large-slope2" parent="." instance=ExtResource("58_sdqil")]
+
+[node name="block-snow-large-tall2" parent="." instance=ExtResource("59_578fv")]
+
+[node name="block-snow-large2" parent="." instance=ExtResource("60_qkgyt")]
+
+[node name="block-snow-long2" parent="." instance=ExtResource("61_mdmod")]
+
+[node name="block-snow-low-hexagon2" parent="." instance=ExtResource("62_nu5wu")]
+
+[node name="block-snow-low-large2" parent="." instance=ExtResource("63_ca1ut")]
+
+[node name="block-snow-low-long2" parent="." instance=ExtResource("64_sl6ov")]
+
+[node name="block-snow-low-narrow2" parent="." instance=ExtResource("65_cgv2w")]
+
+[node name="block-snow-low2" parent="." instance=ExtResource("66_oi27a")]
+
+[node name="block-snow-narrow2" parent="." instance=ExtResource("67_hflwi")]
+
+[node name="block-snow-overhang-corner2" parent="." instance=ExtResource("68_d4tix")]
+
+[node name="block-snow-overhang-edge2" parent="." instance=ExtResource("69_5xo5j")]
+
+[node name="block-snow-overhang-hexagon2" parent="." instance=ExtResource("70_sshfh")]
+
+[node name="block-snow-overhang-large-slope-narrow2" parent="." instance=ExtResource("71_fy61j")]
+
+[node name="block-snow-overhang-large-slope-steep-narrow2" parent="." instance=ExtResource("72_ilqmg")]
+
+[node name="block-snow-overhang-large-slope-steep2" parent="." instance=ExtResource("73_cdx2q")]
+
+[node name="block-snow-overhang-large-slope2" parent="." instance=ExtResource("74_2jh4u")]
+
+[node name="block-snow-overhang-large-tall2" parent="." instance=ExtResource("75_befs4")]
+
+[node name="block-snow-overhang-large2" parent="." instance=ExtResource("76_eyy7r")]
+
+[node name="block-snow-overhang-long2" parent="." instance=ExtResource("77_jw5jx")]
+
+[node name="block-snow-overhang-low-hexagon2" parent="." instance=ExtResource("78_ccvy4")]
+
+[node name="block-snow-overhang-low-large2" parent="." instance=ExtResource("79_fespy")]
+
+[node name="block-snow-overhang-low-long2" parent="." instance=ExtResource("80_dtukl")]
+
+[node name="block-snow-overhang-low-narrow2" parent="." instance=ExtResource("81_b21ew")]
+
+[node name="block-snow-overhang-low2" parent="." instance=ExtResource("82_qyuio")]
+
+[node name="block-snow-overhang-narrow2" parent="." instance=ExtResource("83_088vo")]
+
+[node name="block-snow2" parent="." instance=ExtResource("84_gqbvf")]
+
+[node name="bomb2" parent="." instance=ExtResource("85_ttw8n")]
+
+[node name="button-round2" parent="." instance=ExtResource("86_lyqtf")]
+
+[node name="button-square2" parent="." instance=ExtResource("87_6ptei")]
+
+[node name="chest2" parent="." instance=ExtResource("88_2ey21")]
+
+[node name="coin-bronze2" parent="." instance=ExtResource("89_ouwej")]
+
+[node name="coin-gold2" parent="." instance=ExtResource("90_dkquo")]
+
+[node name="coin-silver2" parent="." instance=ExtResource("91_eum73")]
+
+[node name="crate-item-strong2" parent="." instance=ExtResource("92_edv82")]
+
+[node name="crate-item2" parent="." instance=ExtResource("93_jlop2")]
+
+[node name="crate-strong2" parent="." instance=ExtResource("94_36xyg")]
+
+[node name="crate2" parent="." instance=ExtResource("95_oe7pg")]
+
+[node name="door-large-open2" parent="." instance=ExtResource("96_smcex")]
+
+[node name="door-open2" parent="." instance=ExtResource("97_qbdbx")]
+
+[node name="door-rotate-large2" parent="." instance=ExtResource("98_t3w7l")]
+
+[node name="door-rotate2" parent="." instance=ExtResource("99_v5yyt")]
+
+[node name="fence-broken2" parent="." instance=ExtResource("100_vepqm")]
+
+[node name="fence-corner-curved2" parent="." instance=ExtResource("101_4qq2l")]
+
+[node name="fence-corner2" parent="." instance=ExtResource("102_yfdib")]
+
+[node name="fence-low-broken2" parent="." instance=ExtResource("103_4var7")]
+
+[node name="fence-low-corner-curved2" parent="." instance=ExtResource("104_qpv7v")]
+
+[node name="fence-low-corner2" parent="." instance=ExtResource("105_dl1gr")]
+
+[node name="fence-low-straight2" parent="." instance=ExtResource("106_ey62q")]
+
+[node name="fence-straight2" parent="." instance=ExtResource("107_w04ia")]
+
+[node name="flag2" parent="." instance=ExtResource("108_wg26f")]
+
+[node name="flowers-tall2" parent="." instance=ExtResource("109_uwmba")]
+
+[node name="flowers" parent="." instance=ExtResource("110_k7umu")]
+
+[node name="grass2" parent="." instance=ExtResource("111_otuk4")]
+
+[node name="heart2" parent="." instance=ExtResource("112_spsg2")]
+
+[node name="hedge-corner2" parent="." instance=ExtResource("113_abqer")]
+
+[node name="hedge2" parent="." instance=ExtResource("114_7dsk1")]
+
+[node name="jewel2" parent="." instance=ExtResource("115_acoa1")]
+
+[node name="key2" parent="." instance=ExtResource("116_sjpsu")]
+
+[node name="ladder-broken2" parent="." instance=ExtResource("117_11l5w")]
+
+[node name="ladder-long2" parent="." instance=ExtResource("118_j8lid")]
+
+[node name="ladder2" parent="." instance=ExtResource("119_blbde")]
+
+[node name="lever2" parent="." instance=ExtResource("120_syhqi")]
+
+[node name="lock2" parent="." instance=ExtResource("121_5o2et")]
+
+[node name="mushrooms2" parent="." instance=ExtResource("122_a2h8f")]
+
+[node name="plant2" parent="." instance=ExtResource("123_dd0at")]
+
+[node name="platform-fortified2" parent="." instance=ExtResource("124_pytta")]
+
+[node name="platform-overhang2" parent="." instance=ExtResource("125_mm3e3")]
+
+[node name="platform-ramp2" parent="." instance=ExtResource("126_p32im")]
+
+[node name="platform2" parent="." instance=ExtResource("127_5083t")]
+
+[node name="poles2" parent="." instance=ExtResource("128_dpwgc")]
+
+[node name="rocks2" parent="." instance=ExtResource("129_oi0hn")]
+
+[node name="saw2" parent="." instance=ExtResource("130_3f8mm")]
+
+[node name="sign2" parent="." instance=ExtResource("131_mmbki")]
+
+[node name="spike-block-wide2" parent="." instance=ExtResource("132_5ho4w")]
+
+[node name="spike-block2" parent="." instance=ExtResource("133_dn8nn")]
+
+[node name="stones2" parent="." instance=ExtResource("134_x02ji")]
+
+[node name="trap-spikes-large2" parent="." instance=ExtResource("135_xqge3")]
+
+[node name="trap-spikes2" parent="." instance=ExtResource("136_2xsjd")]
+
+[node name="tree-pine-small2" parent="." instance=ExtResource("137_2u8ed")]
+
+[node name="tree-pine-snow-small2" parent="." instance=ExtResource("138_tq4oi")]
+
+[node name="tree-pine-snow2" parent="." instance=ExtResource("139_3kmu2")]
+
+[node name="tree-pine2" parent="." instance=ExtResource("140_6twao")]
+
+[node name="tree-snow2" parent="." instance=ExtResource("141_3o820")]
+
+[node name="tree2" parent="." instance=ExtResource("142_ivxh0")]
