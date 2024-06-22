@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://do33h604xdnvc"]
+
+[node name="Stock Market UI" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Stock Name List" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Stock Graph" type="SubViewportContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="HBoxContainer/Stock Graph"]
