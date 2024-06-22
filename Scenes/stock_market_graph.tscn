@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bvifou71n36n8"]
+
+[node name="Stock Market Graph" type="Node2D"]
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(0, 256, 462, 171, 1142, 563)
+default_color = Color(0, 1, 0, 1)
