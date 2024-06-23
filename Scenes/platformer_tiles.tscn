@@ -1,4 +1,4 @@
-[gd_scene load_steps=143 format=3 uid="uid://xr313im6nxhc"]
+[gd_scene load_steps=144 format=3 uid="uid://xr313im6nxhc"]
 
 [ext_resource type="PackedScene" uid="uid://d3dtjbk7ng4rm" path="res://Assets/kenney_platformer-kit/Models/GLB format/arrow.glb" id="1_tjyw8"]
 [ext_resource type="PackedScene" uid="uid://cpfybay1w3usa" path="res://Assets/kenney_platformer-kit/Models/GLB format/arrows.glb" id="2_bpjt1"]
@@ -143,7 +143,10 @@
 [ext_resource type="PackedScene" uid="uid://b2g5covb2vp5e" path="res://Assets/kenney_platformer-kit/Models/GLB format/tree-snow.glb" id="141_3o820"]
 [ext_resource type="PackedScene" uid="uid://b8bbj5j2q7sed" path="res://Assets/kenney_platformer-kit/Models/GLB format/tree.glb" id="142_ivxh0"]
 
-[node name="Platformer Tiles" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_umljx"]
+size = Vector3(2.05003, 1, 1.8349)
+
+[node name="Platformer Tiles" type="Area3D"]
 
 [node name="arrow2" parent="." instance=ExtResource("1_tjyw8")]
 
@@ -428,3 +431,7 @@
 [node name="tree-snow2" parent="." instance=ExtResource("141_3o820")]
 
 [node name="tree2" parent="." instance=ExtResource("142_ivxh0")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00485992, 0.496748, 0.0473328)
+shape = SubResource("BoxShape3D_umljx")

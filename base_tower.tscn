@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3v8my0x65hcb"]
+
+[ext_resource type="Script" path="res://BaseTower.gd" id="1_w781r"]
+[ext_resource type="PackedScene" uid="uid://shjvygj3klas" path="res://Assets/kenney_castle-kit/Models/GLB format/tree-trunk.glb" id="2_r6ep6"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_lyfbk"]
+
+[node name="BaseTower" type="Node3D"]
+script = ExtResource("1_w781r")
+
+[node name="TowerHead" parent="." instance=ExtResource("2_r6ep6")]
+transform = Transform3D(1.47529, 0, 0, 0, 0.0611099, -1.47402, 0, 1.47402, 0.0611099, 0, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(3.97699, 0, 0, 0, 0.555208, 0, 0, 0, 4.21275, 0, 0.519518, 0)
+shape = SubResource("CylinderShape3D_lyfbk")
+
+[node name="Area3D2" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15027, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D2"]
+transform = Transform3D(1, 0, 0, 0, 0.490577, 0, 0, 0, 1, 0, -0.691718, 0)
+shape = SubResource("CylinderShape3D_lyfbk")
+
+[node name="ShootTimer" type="Timer" parent="."]
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
+[connection signal="area_exited" from="Area3D" to="." method="_on_area_3d_area_exited"]
+[connection signal="timeout" from="ShootTimer" to="." method="_on_shoot_timer_timeout"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2o3h5fak83nl"]
+
+[ext_resource type="Script" path="res://BasicEnemy.gd" id="1_q44rw"]
+[ext_resource type="PackedScene" uid="uid://shjvygj3klas" path="res://Assets/kenney_castle-kit/Models/GLB format/tree-trunk.glb" id="2_bh0dv"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_lhcjp"]
+
+[node name="BasicEnemy" type="PathFollow3D"]
+script = ExtResource("1_q44rw")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="tree-trunk2" parent="Area3D" instance=ExtResource("2_bh0dv")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" groups=["Enemy"]]
+transform = Transform3D(0.307318, 0, 0, 0, 0.307318, 0, 0, 0, 0.307318, 0, 0.14518, 0)
+shape = SubResource("CylinderShape3D_lhcjp")
