@@ -12,6 +12,7 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 23
+up_vector_enabled = false
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_l0taf"]
 sky_top_color = Color(0.630373, 0.946077, 0.97278, 1)
