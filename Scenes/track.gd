@@ -3,7 +3,7 @@ extends Node3D
 var horde:int = 100
 var wave:int = 0
 var mobs_left:int = 0
-var wave_mobs:Array = [1, 1, 1, 1, 1, 1,]
+var wave_mobs:Array = [1, 3, 5, 10, 10, 20]
 var wave_speed:Array = [1,1,0.5,0.5,0.3,100]
 
 const enemy:PackedScene = preload("res://basic_enemy.tscn")
