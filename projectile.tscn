@@ -1,21 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://sbd7kh0yxn55"]
+[gd_scene load_steps=3 format=3 uid="uid://sbd7kh0yxn55"]
 
 [ext_resource type="Script" path="res://projectile.gd" id="1_h8tkh"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_dyc07"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_cx1si"]
+[sub_resource type="CylinderMesh" id="CylinderMesh_8qjhr"]
 
 [node name="Projectile" type="Area3D" groups=["Projectile"]]
 script = ExtResource("1_h8tkh")
 
-[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="."]
-transform = Transform3D(0.512148, 0, 0, 0, 0.512148, 0, 0, 0, 0.512148, 0, 0, 0)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_dyc07")
-
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_cx1si")
+transform = Transform3D(2, 0, 0, 0, 0.2, 0, 0, 0, 2, 0, 0, 0)
+mesh = SubResource("CylinderMesh_8qjhr")
 
-[connection signal="screen_exited" from="VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_exited"]
+[node name="LifeTimer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="LifeTimer" to="." method="_on_life_timer_timeout"]

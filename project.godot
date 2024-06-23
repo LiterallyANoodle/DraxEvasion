@@ -17,7 +17,7 @@ config/icon="res://Assets/icon.svg"
 
 [autoload]
 
-GlobalAudioStreamPlayer="res://Scenes/main_game_music.tscn"
+SignalBus="*res://Scripts/signal_bus.gd"
 
 [debug]
 

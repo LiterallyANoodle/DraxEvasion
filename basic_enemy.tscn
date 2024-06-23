@@ -54,9 +54,9 @@ rotation_mode = 0
 tilt_enabled = false
 script = ExtResource("1_q44rw")
 
-[node name="Area3D" type="Area3D" parent="."]
+[node name="Area3D" type="Area3D" parent="." groups=["Enemy"]]
 
-[node name="tree-trunk2" parent="Area3D" instance=ExtResource("2_bh0dv")]
+[node name="tree-trunk2" parent="Area3D" groups=["Enemy"] instance=ExtResource("2_bh0dv")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" groups=["Enemy"]]
 transform = Transform3D(0.307318, 0, 0, 0, 0.307318, 0, 0, 0, 0.307318, 0, 0.14518, 0)
