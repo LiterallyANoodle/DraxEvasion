@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://unkldhra8tbo"]
+[gd_scene load_steps=11 format=3 uid="uid://unkldhra8tbo"]
 
 [ext_resource type="MeshLibrary" uid="uid://ccixbsrqrbl4u" path="res://Assets/platformer_tiles.tres" id="1_hukfp"]
 [ext_resource type="Script" path="res://Scenes/track.gd" id="1_m5l2c"]
 [ext_resource type="MeshLibrary" uid="uid://dycvsnq3tjjlv" path="res://Assets/castle_tiles.tres" id="2_iedeq"]
 [ext_resource type="PackedScene" uid="uid://c3v8my0x65hcb" path="res://base_tower.tscn" id="4_7txm1"]
+[ext_resource type="PackedScene" uid="uid://b312ry8fx8hlf" path="res://Scenes/placement_point.tscn" id="5_5fx4d"]
 
 [sub_resource type="Curve3D" id="Curve3D_tts10"]
 _data = {
@@ -89,7 +90,13 @@ one_shot = true
 
 [node name="BaseTower" parent="." instance=ExtResource("4_7txm1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73358, 0.554126, -0.562968)
-visible = false
+
+[node name="Allowed Placements" type="Node3D" parent="."]
+
+[node name="Placement Point" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.39361, -3.74553)
 
 [connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
 [connection signal="timeout" from="EnemyTimer" to="." method="_on_enemy_timer_timeout"]
+
+[editable path="BaseTower"]
