@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3v732rqtrdpy"]
+
+[ext_resource type="AudioStream" uid="uid://b0ti0gww30egl" path="res://Assets/2021-05-12_-_Cooking_With_The_Italians_-_www.FesliyanStudios.com.mp3" id="1_0pb2x"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_0pb2x")
+autoplay = true

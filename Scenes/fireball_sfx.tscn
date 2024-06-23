@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsynyu8by3fe4"]
+
+[ext_resource type="AudioStream" uid="uid://5b1moqlxkpwq" path="res://Assets/whoosh-cinematic-161021.mp3" id="1_uvw56"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_uvw56")
