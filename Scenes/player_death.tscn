@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjtrx1ccyj7vw"]
+
+[ext_resource type="AudioStream" uid="uid://dpujf2fh0jhmm" path="res://Assets/tubular-bell-of-death-89485.mp3" id="1_cqmob"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_cqmob")

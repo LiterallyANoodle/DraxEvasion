@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpcoo66up2utq"]
+
+[ext_resource type="AudioStream" uid="uid://b1qksmxsagjbw" path="res://Assets/crow-sound-94874.mp3" id="1_useoo"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_useoo")
