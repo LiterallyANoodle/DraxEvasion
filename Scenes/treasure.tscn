@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuysy7826vt7b"]
+
+[ext_resource type="Texture2D" uid="uid://dnm4qcn3p0xm1" path="res://Assets/treasure_spritesheet.png" id="1_6ps7l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cth7b"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_6ps7l")
+billboard_mode = 1
+
+[node name="Treasure" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+material_override = SubResource("StandardMaterial3D_cth7b")
+pixel_size = 0.002
+texture = ExtResource("1_6ps7l")
+hframes = 2

@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://unkldhra8tbo"]
+[gd_scene load_steps=13 format=3 uid="uid://unkldhra8tbo"]
 
 [ext_resource type="MeshLibrary" uid="uid://ccixbsrqrbl4u" path="res://Assets/platformer_tiles.tres" id="1_hukfp"]
 [ext_resource type="Script" path="res://Scenes/track.gd" id="1_m5l2c"]
 [ext_resource type="MeshLibrary" uid="uid://dycvsnq3tjjlv" path="res://Assets/castle_tiles.tres" id="2_iedeq"]
 [ext_resource type="PackedScene" uid="uid://c3v8my0x65hcb" path="res://base_tower.tscn" id="4_7txm1"]
 [ext_resource type="PackedScene" uid="uid://b312ry8fx8hlf" path="res://Scenes/placement_point.tscn" id="5_5fx4d"]
+[ext_resource type="PackedScene" uid="uid://bgiblb5js7hei" path="res://Scenes/dragon_new.tscn" id="6_y06as"]
+[ext_resource type="PackedScene" uid="uid://cuysy7826vt7b" path="res://Scenes/treasure.tscn" id="7_swdtq"]
 
 [sub_resource type="Curve3D" id="Curve3D_tts10"]
 _data = {
@@ -126,6 +128,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4293, 2.78657, -6.23554)
 
 [node name="Placement Point11" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01481, 3.95816, -8.60595)
+
+[node name="DragonNew" parent="." instance=ExtResource("6_y06as")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.66593, 4.87035, -7.63889)
+
+[node name="Treasure" parent="." instance=ExtResource("7_swdtq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.31343, 4.28362, -7.32909)
 
 [connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
 [connection signal="timeout" from="EnemyTimer" to="." method="_on_enemy_timer_timeout"]
