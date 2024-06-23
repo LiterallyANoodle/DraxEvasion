@@ -1,12 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgiblb5js7hei"]
+[gd_scene load_steps=6 format=3 uid="uid://bgiblb5js7hei"]
 
 [ext_resource type="Texture2D" uid="uid://x0k7pa27hyia" path="res://Assets/dragon_spritesheet.png" id="1_5s0v6"]
 [ext_resource type="Script" path="res://Scripts/dragon_new.gd" id="2_ngupd"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m6gb8"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_5s0v6")
+billboard_mode = 1
+
 [sub_resource type="Animation" id="Animation_lw1l8"]
 resource_name = "Idle"
 length = 0.7
-loop_mode = 1
+loop_mode = 2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -25,11 +31,14 @@ _data = {
 "Idle": SubResource("Animation_lw1l8")
 }
 
-[node name="DragonNew" type="Sprite2D"]
+[node name="DragonNew" type="Sprite3D"]
+material_override = SubResource("StandardMaterial3D_m6gb8")
+pixel_size = 0.001
+billboard = 1
 texture_filter = 1
 texture = ExtResource("1_5s0v6")
 hframes = 8
-frame = 6
+frame = 3
 script = ExtResource("2_ngupd")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
