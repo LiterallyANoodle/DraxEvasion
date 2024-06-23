@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2cu380psdk0p"]
+[gd_scene load_steps=4 format=3 uid="uid://b2cu380psdk0p"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_mj2tt"]
 [ext_resource type="Theme" uid="uid://b3c6va0gjoarl" path="res://Assets/UI_Styles/Basic_UI_Theme.tres" id="2_ivhhy"]
+[ext_resource type="Texture2D" uid="uid://1ta87rxy87v6" path="res://Assets/ScreenArt/StartScreen.png" id="3_03l1q"]
 
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
@@ -21,15 +22,20 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_ivhhy")
 
+[node name="StartScreen" type="Sprite2D" parent="."]
+position = Vector2(577, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_03l1q")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 50.0
-offset_top = -60.0
-offset_right = 244.0
-offset_bottom = 159.0
+offset_left = 334.0
+offset_top = -116.0
+offset_right = 528.0
+offset_bottom = 103.0
 grow_vertical = 2
 alignment = 1
 
@@ -52,6 +58,18 @@ size_flags_vertical = 3
 focus_neighbor_bottom = NodePath("../Play")
 theme_override_font_sizes/font_size = 32
 text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 309.0
+offset_top = 34.0
+offset_right = 972.0
+offset_bottom = 219.0
+theme = ExtResource("2_ivhhy")
+theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(0.199333, 0, 0.52, 1)
+theme_override_font_sizes/font_size = 70
+text = "DRAX EVASION"
+vertical_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_options_pressed"]

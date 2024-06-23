@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://kvv1q08d5cnj"]
+[gd_scene load_steps=4 format=3 uid="uid://kvv1q08d5cnj"]
 
 [ext_resource type="Theme" uid="uid://b3c6va0gjoarl" path="res://Assets/UI_Styles/Basic_UI_Theme.tres" id="1_3v7kr"]
 [ext_resource type="Script" path="res://Scenes/win.gd" id="1_hk684"]
+[ext_resource type="Texture2D" uid="uid://kwktpct5ht8y" path="res://Assets/ScreenArt/WinScreen.png" id="2_uipbr"]
 
 [node name="Win" type="Node2D"]
 script = ExtResource("1_hk684")
@@ -13,23 +14,31 @@ offset_right = 1156.0
 offset_bottom = 648.0
 size_flags_horizontal = 3
 
+[node name="WinScreen" type="Sprite2D" parent="Control"]
+position = Vector2(577.333, 323.25)
+scale = Vector2(0.599537, 0.599537)
+texture = ExtResource("2_uipbr")
+
 [node name="Label" type="Label" parent="Control"]
 layout_mode = 0
-offset_left = -1.0
-offset_top = 108.0
-offset_right = 1152.0
-offset_bottom = 293.0
+offset_left = 453.0
+offset_top = 84.0
+offset_right = 1116.0
+offset_bottom = 269.0
 theme = ExtResource("1_3v7kr")
 theme_type_variation = &"HeaderLarge"
+theme_override_colors/font_color = Color(0.199333, 0, 0.52, 1)
+theme_override_font_sizes/font_size = 46
 text = "No Taxes for this Dragon!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Quit" type="Button" parent="Control"]
-offset_left = 437.0
-offset_top = 307.0
-offset_right = 679.0
-offset_bottom = 387.0
+layout_mode = 0
+offset_left = 8.0
+offset_top = 562.0
+offset_right = 250.0
+offset_bottom = 642.0
 size_flags_vertical = 3
 focus_neighbor_bottom = NodePath("../Play")
 theme_override_font_sizes/font_size = 32

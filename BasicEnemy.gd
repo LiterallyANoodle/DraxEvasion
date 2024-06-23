@@ -13,6 +13,7 @@ func _physics_process(delta: float) -> void:
 	progress += speed * delta 
 	if progress_ratio >= 1.0:
 		queue_free()
+		get_tree().change_scene_to_file("res://Scenes/lose.tscn")
 
 func _process(delta: float) -> void:
 	if fmod(self.rotation_degrees.y + 360, 360.0) >= 45.0 and fmod(self.rotation_degrees.y + 360, 360.0) < 135.0:
