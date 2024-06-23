@@ -19,3 +19,5 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="SubViewport" type="SubViewport" parent="HBoxContainer/Stock Graph"]
+handle_input_locally = false
+render_target_update_mode = 4

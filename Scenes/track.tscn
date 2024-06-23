@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://unkldhra8tbo"]
+[gd_scene load_steps=10 format=3 uid="uid://unkldhra8tbo"]
 
 [ext_resource type="MeshLibrary" uid="uid://ccixbsrqrbl4u" path="res://Assets/platformer_tiles.tres" id="1_hukfp"]
 [ext_resource type="Script" path="res://Scenes/track.gd" id="1_m5l2c"]
@@ -12,7 +12,29 @@ _data = {
 }
 point_count = 23
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_l0taf"]
+sky_top_color = Color(0.630373, 0.946077, 0.97278, 1)
+sky_horizon_color = Color(0.601808, 0.781322, 0.971321, 1)
+ground_bottom_color = Color(0.128577, 0.581036, 0.602006, 1)
+ground_horizon_color = Color(0.6, 0.780392, 0.972549, 1)
+
+[sub_resource type="Sky" id="Sky_8pad6"]
+sky_material = SubResource("ProceduralSkyMaterial_l0taf")
+
 [sub_resource type="Environment" id="Environment_vuj03"]
+background_mode = 2
+sky = SubResource("Sky_8pad6")
+tonemap_mode = 2
+ssao_enabled = true
+ssao_radius = 2.01
+ssao_intensity = 4.69
+ssil_enabled = true
+ssil_intensity = 0.5
+ssil_sharpness = 0.87
+adjustment_enabled = true
+adjustment_brightness = 0.85
+adjustment_contrast = 1.1
+adjustment_saturation = 1.2
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_gj7hg"]
 
@@ -41,7 +63,7 @@ metadata/_editor_floor_ = Vector3(0, 3, 0)
 curve = SubResource("Curve3D_tts10")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 3.48911, 5, -1.2)
+transform = Transform3D(1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 0, 5, -1.2)
 projection = 1
 current = true
 fov = 58.5
@@ -67,6 +89,7 @@ one_shot = true
 
 [node name="BaseTower" parent="." instance=ExtResource("4_7txm1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73358, 0.554126, -0.562968)
+visible = false
 
 [connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
 [connection signal="timeout" from="EnemyTimer" to="." method="_on_enemy_timer_timeout"]
