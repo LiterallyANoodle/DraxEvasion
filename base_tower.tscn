@@ -14,11 +14,10 @@ script = ExtResource("1_w781r")
 transform = Transform3D(1.47529, 0, 0, 0, 0.0611099, -1.47402, 0, 1.47402, 0.0611099, 0, 0, 0)
 
 [node name="Vision" type="Area3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15027, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Vision"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.691718, 0)
 shape = SubResource("CylinderShape3D_lyfbk")
 
 [node name="ShootTimer" type="Timer" parent="."]
