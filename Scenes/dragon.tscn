@@ -1,0 +1,334 @@
+[gd_scene load_steps=29 format=3 uid="uid://djdu5qt5tb6lr"]
+
+[ext_resource type="Texture2D" uid="uid://blap1xu37c6j4" path="res://Dragon/BodyFur.png" id="1_hjj6r"]
+[ext_resource type="Texture2D" uid="uid://df5vgeebbuvm7" path="res://Dragon/BackLeg.png" id="2_jf8vu"]
+[ext_resource type="Texture2D" uid="uid://hiw5w3enk5jr" path="res://Dragon/BackArm.png" id="3_xgo0w"]
+[ext_resource type="Texture2D" uid="uid://bi4wj27ovqxg2" path="res://Dragon/BackHand.png" id="4_5p52w"]
+[ext_resource type="Texture2D" uid="uid://bwy2n853ulmun" path="res://Dragon/BackHorn.png" id="5_q3ba4"]
+[ext_resource type="Texture2D" uid="uid://brtd65fqgpc5k" path="res://Dragon/Backear.png" id="6_0xjeb"]
+[ext_resource type="Texture2D" uid="uid://34uy8xe0ryed" path="res://Dragon/Tail.png" id="7_3532e"]
+[ext_resource type="Texture2D" uid="uid://hcg4nlue8ddm" path="res://Dragon/Body1.png" id="8_uq4ad"]
+[ext_resource type="Texture2D" uid="uid://de16g57i0r4df" path="res://Dragon/Body2.png" id="9_62820"]
+[ext_resource type="Texture2D" uid="uid://dfrpdneeq3t1f" path="res://Dragon/Body3.png" id="10_g3wf7"]
+[ext_resource type="Texture2D" uid="uid://dmlhl1xlcyoaa" path="res://Dragon/Body4.png" id="11_wsqet"]
+[ext_resource type="Texture2D" uid="uid://c3qnv6p8gij58" path="res://Dragon/Body5.png" id="12_hl1pw"]
+[ext_resource type="Texture2D" uid="uid://cbudi1blln86s" path="res://Dragon/Body6.png" id="13_3dfgp"]
+[ext_resource type="Texture2D" uid="uid://b1pfs5mcimmw0" path="res://Dragon/Body7.png" id="14_1gvlu"]
+[ext_resource type="Texture2D" uid="uid://d2bb08b2n2ye8" path="res://Dragon/Body8.png" id="15_ul74a"]
+[ext_resource type="Texture2D" uid="uid://dpse72r11i4f2" path="res://Dragon/Body9.png" id="16_ihp27"]
+[ext_resource type="Texture2D" uid="uid://cvbl8mkray1xw" path="res://Dragon/FrontArm.png" id="17_mhadv"]
+[ext_resource type="Texture2D" uid="uid://cij0fovglsv3i" path="res://Dragon/FrontHand.png" id="18_afjni"]
+[ext_resource type="Texture2D" uid="uid://bnh2mea423pdy" path="res://Dragon/FrontLeg.png" id="19_g6258"]
+[ext_resource type="Texture2D" uid="uid://dgf7gwsy7tkcq" path="res://Dragon/Head.png" id="20_0qqib"]
+[ext_resource type="Texture2D" uid="uid://cuojcqap3wxhy" path="res://Dragon/Eyebrows.png" id="21_08nlq"]
+[ext_resource type="Texture2D" uid="uid://cd6ynqqhqlt3f" path="res://Dragon/Eyes.png" id="22_bfago"]
+[ext_resource type="Texture2D" uid="uid://bm7wsrpxm7jmp" path="res://Dragon/FrontEar.png" id="23_kq82r"]
+[ext_resource type="Texture2D" uid="uid://ono018px2f1s" path="res://Dragon/FrontHorn.png" id="24_4kmts"]
+[ext_resource type="Texture2D" uid="uid://dm71ckuwp2pnt" path="res://Dragon/BackWhisker.png" id="25_ay0gy"]
+[ext_resource type="Texture2D" uid="uid://bpt4xe0chj2dk" path="res://Dragon/Snout.png" id="26_lxb2k"]
+[ext_resource type="Texture2D" uid="uid://gledgp3gghin" path="res://Dragon/Beard.png" id="27_ndnv1"]
+[ext_resource type="Texture2D" uid="uid://b14w1dk7nwdjx" path="res://Dragon/FrontWhisker.png" id="28_cmbmy"]
+
+[node name="Dragon" type="Node2D"]
+
+[node name="SkeletonContainer" type="Node2D" parent="."]
+
+[node name="Parts" type="Node2D" parent="SkeletonContainer"]
+
+[node name="BodyFur" type="Sprite2D" parent="SkeletonContainer/Parts"]
+texture = ExtResource("1_hjj6r")
+
+[node name="BackLeg" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur"]
+position = Vector2(5, 15)
+texture = ExtResource("2_jf8vu")
+
+[node name="BackArm" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur"]
+position = Vector2(-5, 5)
+texture = ExtResource("3_xgo0w")
+
+[node name="BackHand" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/BackArm"]
+position = Vector2(19, -19)
+texture = ExtResource("4_5p52w")
+
+[node name="Backear" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur"]
+position = Vector2(0, -1)
+texture = ExtResource("6_0xjeb")
+
+[node name="BackHorn" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Backear"]
+position = Vector2(0, 1)
+texture = ExtResource("5_q3ba4")
+
+[node name="Tail" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur"]
+position = Vector2(-1, -2)
+texture = ExtResource("7_3532e")
+
+[node name="Body1" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Tail"]
+position = Vector2(-2, 6)
+texture = ExtResource("8_uq4ad")
+
+[node name="Body2" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Tail/Body1"]
+position = Vector2(-2, -1)
+texture = ExtResource("9_62820")
+
+[node name="Body3" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Tail/Body1/Body2"]
+position = Vector2(1, 7)
+texture = ExtResource("10_g3wf7")
+
+[node name="Body4" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Tail/Body1/Body2/Body3"]
+position = Vector2(2, 4)
+texture = ExtResource("11_wsqet")
+
+[node name="Body5" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Tail/Body1/Body2/Body3/Body4"]
+position = Vector2(1, -11)
+texture = ExtResource("12_hl1pw")
+
+[node name="Body6" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Tail/Body1/Body2/Body3/Body4/Body5"]
+position = Vector2(0, -2)
+texture = ExtResource("13_3dfgp")
+
+[node name="Body7" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Tail/Body1/Body2/Body3/Body4/Body5/Body6"]
+position = Vector2(-2, 2)
+texture = ExtResource("14_1gvlu")
+
+[node name="Body8" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7"]
+position = Vector2(0, 3)
+texture = ExtResource("15_ul74a")
+
+[node name="Body9" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8"]
+position = Vector2(2, -7)
+texture = ExtResource("16_ihp27")
+
+[node name="FrontArm" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur"]
+position = Vector2(2, 5)
+texture = ExtResource("17_mhadv")
+
+[node name="FrontHand" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/FrontArm"]
+position = Vector2(2, -10)
+texture = ExtResource("18_afjni")
+
+[node name="FrontLeg" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur"]
+position = Vector2(-19, 10)
+texture = ExtResource("19_g6258")
+
+[node name="Head" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur"]
+position = Vector2(-7, -7)
+texture = ExtResource("20_0qqib")
+
+[node name="Eyebrows" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Head"]
+texture = ExtResource("21_08nlq")
+
+[node name="Eyes" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Head"]
+texture = ExtResource("22_bfago")
+
+[node name="FrontEar" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Head"]
+position = Vector2(-3, 0)
+texture = ExtResource("23_kq82r")
+
+[node name="FrontHorn" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Head"]
+texture = ExtResource("24_4kmts")
+
+[node name="BackWhisker" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Head"]
+position = Vector2(0, -2)
+texture = ExtResource("25_ay0gy")
+
+[node name="Snout" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Head"]
+position = Vector2(1, 5)
+texture = ExtResource("26_lxb2k")
+
+[node name="Beard" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Head"]
+position = Vector2(2, -5)
+texture = ExtResource("27_ndnv1")
+
+[node name="FrontWhisker" type="Sprite2D" parent="SkeletonContainer/Parts/BodyFur/Head"]
+position = Vector2(4, 0)
+texture = ExtResource("28_cmbmy")
+
+[node name="Skeleton2D" type="Skeleton2D" parent="SkeletonContainer"]
+
+[node name="Base" type="Bone2D" parent="SkeletonContainer/Skeleton2D"]
+position = Vector2(-15, 256)
+rest = Transform2D(1, 0, 0, 1, -15, 256)
+
+[node name="Tail" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base"]
+position = Vector2(3, -15)
+rest = Transform2D(1, 0, 0, 1, 3, -15)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail"]
+position = Vector2(11, -243)
+remote_path = NodePath("../../../../Parts/BodyFur/Tail")
+
+[node name="Body1" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail"]
+position = Vector2(1, -102)
+rest = Transform2D(1, 0, 0, 1, 1, -102)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1"]
+position = Vector2(8, -135)
+remote_path = NodePath("../../../../../Parts/BodyFur/Tail/Body1")
+
+[node name="Body2" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1"]
+position = Vector2(1, -35)
+rest = Transform2D(1, 0, 0, 1, 1, -35)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2"]
+position = Vector2(5, -101)
+remote_path = NodePath("../../../../../../Parts/BodyFur/Tail/Body1/Body2")
+
+[node name="Body3" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2"]
+position = Vector2(1, -30)
+rest = Transform2D(1, 0, 0, 1, 1, -30)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3"]
+position = Vector2(5, -64)
+remote_path = NodePath("../../../../../../../Parts/BodyFur/Tail/Body1/Body2/Body3")
+
+[node name="Body4" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3"]
+position = Vector2(1, -27)
+rest = Transform2D(1, 0, 0, 1, 1, -27)
+
+[node name="Body5" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4"]
+position = Vector2(0, -30)
+rest = Transform2D(1, 0, 0, 1, 0, -30)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5"]
+position = Vector2(7, -14)
+remote_path = NodePath("../../../../../../../../../Parts/BodyFur/Tail/Body1/Body2/Body3/Body4/Body5")
+
+[node name="Body6" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5"]
+position = Vector2(0, -27)
+rest = Transform2D(1, 0, 0, 1, 0, -27)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6"]
+position = Vector2(7, 11)
+remote_path = NodePath("../../../../../../../../../../Parts/BodyFur/Tail/Body1/Body2/Body3/Body4/Body5/Body6")
+
+[node name="Body7" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6"]
+position = Vector2(0, -25)
+rest = Transform2D(1, 0, 0, 1, 0, -25)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7"]
+position = Vector2(5, 38)
+remote_path = NodePath("../../../../../../../../../../../Parts/BodyFur/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7")
+
+[node name="Body8" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7"]
+position = Vector2(0, -27)
+rest = Transform2D(1, 0, 0, 1, 0, -27)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8"]
+position = Vector2(5, 68)
+remote_path = NodePath("../../../../../../../../../../../../Parts/BodyFur/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8")
+
+[node name="Body9" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8"]
+position = Vector2(0, -28)
+rest = Transform2D(1, 0, 0, 1, 0, -28)
+
+[node name="Head" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9"]
+position = Vector2(0, -42)
+rest = Transform2D(1, 0, 0, 1, 0, -42)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head"]
+position = Vector2(1, 125)
+remote_path = NodePath("../../../../../../../../../../../../../../Parts/BodyFur/Head")
+
+[node name="FrontEar" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head"]
+position = Vector2(-16, -37)
+rest = Transform2D(1, 0, 0, 1, -16, -37)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head/FrontEar"]
+position = Vector2(14, 162)
+remote_path = NodePath("../../../../../../../../../../../../../../../Parts/BodyFur/Head/FrontEar")
+
+[node name="BackEar" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head"]
+position = Vector2(14, -42)
+rest = Transform2D(1, 0, 0, 1, 14, -42)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head/BackEar"]
+position = Vector2(-6, 173)
+remote_path = NodePath("../../../../../../../../../../../../../../../Parts/BodyFur/Backear")
+
+[node name="FrontWhisk" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head"]
+position = Vector2(10, -15)
+rest = Transform2D(1, 0, 0, 1, 10, -15)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head/FrontWhisk"]
+position = Vector2(-5, 140)
+remote_path = NodePath("../../../../../../../../../../../../../../../Parts/BodyFur/Head/FrontWhisker")
+
+[node name="BackWhisk" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head"]
+position = Vector2(29, -14)
+rest = Transform2D(1, 0, 0, 1, 29, -14)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head/BackWhisk"]
+position = Vector2(-28, 137)
+remote_path = NodePath("../../../../../../../../../../../../../../../Parts/BodyFur/Head/BackWhisker")
+
+[node name="Bear" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head"]
+position = Vector2(11, 10)
+rest = Transform2D(1, 0, 0, 1, 11, 10)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head/Bear"]
+position = Vector2(-8, 110)
+remote_path = NodePath("../../../../../../../../../../../../../../../Parts/BodyFur/Head/Beard")
+
+[node name="Snout" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head"]
+position = Vector2(7, -27)
+rest = Transform2D(1, 0, 0, 1, 7, -27)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/Head/Snout"]
+position = Vector2(-5, 157)
+remote_path = NodePath("../../../../../../../../../../../../../../../Parts/BodyFur/Head/Snout")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9"]
+position = Vector2(7, 89)
+remote_path = NodePath("../../../../../../../../../../../../../Parts/BodyFur/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9")
+
+[node name="FrontShoulder" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9"]
+position = Vector2(-19, -19)
+rest = Transform2D(1, 0, 0, 1, -19, -19)
+
+[node name="FrontHand" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/FrontShoulder"]
+position = Vector2(-20, 72)
+rest = Transform2D(1, 0, 0, 1, -20, 72)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/FrontShoulder/FrontHand"]
+position = Vector2(51, 32)
+remote_path = NodePath("../../../../../../../../../../../../../../../Parts/BodyFur/FrontArm/FrontHand")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/FrontShoulder"]
+position = Vector2(29, 114)
+remote_path = NodePath("../../../../../../../../../../../../../../Parts/BodyFur/FrontArm")
+
+[node name="BackShoulder" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9"]
+position = Vector2(20, -19)
+rest = Transform2D(1, 0, 0, 1, 20, -19)
+
+[node name="BackHand" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/BackShoulder"]
+position = Vector2(0, 71)
+rest = Transform2D(1, 0, 0, 1, 0, 71)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/BackShoulder/BackHand"]
+position = Vector2(2, 24)
+remote_path = NodePath("../../../../../../../../../../../../../../../Parts/BodyFur/BackArm/BackHand")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/Body5/Body6/Body7/Body8/Body9/BackShoulder"]
+position = Vector2(-17, 114)
+remote_path = NodePath("../../../../../../../../../../../../../../Parts/BodyFur/BackArm")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4"]
+position = Vector2(6, -33)
+remote_path = NodePath("../../../../../../../../Parts/BodyFur/Tail/Body1/Body2/Body3/Body4")
+
+[node name="FrontLeg" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4"]
+position = Vector2(-18, 0)
+rest = Transform2D(1, 0, 0, 1, -18, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/FrontLeg"]
+position = Vector2(7, -37)
+remote_path = NodePath("../../../../../../../../../Parts/BodyFur/FrontLeg")
+
+[node name="BackLeg" type="Bone2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4"]
+position = Vector2(25, 0)
+rest = Transform2D(1, 0, 0, 1, 25, 0)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="SkeletonContainer/Skeleton2D/Base/Tail/Body1/Body2/Body3/Body4/BackLeg"]
+position = Vector2(-12, -32)
+remote_path = NodePath("../../../../../../../../../Parts/BodyFur/BackLeg")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://xt0iuhmx2h5j"]
+
+[ext_resource type="PackedScene" uid="uid://wv82lftcenaa" path="res://Scenes/castle_tiles.tscn" id="1_gj06k"]
+
+[node name="Test_Pause_Level" type="Node3D"]
+process_mode = 1
+
+[node name="Castle Tiles" parent="." instance=ExtResource("1_gj06k")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.0299454, 0, 0.999552, 0, 1, 0, -0.999552, 0, -0.0299454, 3.74416, 2.01134, 0)
