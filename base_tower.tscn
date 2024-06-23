@@ -15,6 +15,7 @@ transform = Transform3D(1.47529, 0, 0, 0, 0.0611099, -1.47402, 0, 1.47402, 0.061
 
 [node name="Vision" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.15027, 0)
+input_ray_pickable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Vision"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.691718, 0)

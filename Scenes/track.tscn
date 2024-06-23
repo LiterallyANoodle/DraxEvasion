@@ -94,7 +94,37 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.73358, 0.554126, -0.562968)
 [node name="Allowed Placements" type="Node3D" parent="."]
 
 [node name="Placement Point" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.39361, -3.74553)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.27389, 0.494318, -1.71813)
+
+[node name="Placement Point2" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.739197, 0.494318, -1.71813)
+
+[node name="Placement Point3" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.91027, 0.494318, -1.71813)
+
+[node name="Placement Point4" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.26811, 1.58702, -3.92534)
+
+[node name="Placement Point5" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.26811, 1.58702, -6.15419)
+
+[node name="Placement Point6" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.643267, 1.58702, -3.26162)
+
+[node name="Placement Point7" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9474, 1.58702, -3.26162)
+
+[node name="Placement Point8" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.97436, 2.5269, -3.52683)
+
+[node name="Placement Point9" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9569, 2.78657, -6.23554)
+
+[node name="Placement Point10" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4293, 2.78657, -6.23554)
+
+[node name="Placement Point11" parent="Allowed Placements" instance=ExtResource("5_5fx4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01481, 3.95816, -8.60595)
 
 [connection signal="timeout" from="WaveTimer" to="." method="_on_wave_timer_timeout"]
 [connection signal="timeout" from="EnemyTimer" to="." method="_on_enemy_timer_timeout"]
