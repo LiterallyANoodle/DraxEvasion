@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b80la034hcota"]
+
+[ext_resource type="AudioStream" uid="uid://w3segviofhhu" path="res://Assets/2020-01-19_-_Livin_Funky_-_FesliyanStudios.com_-_David_Renda.mp3" id="1_ytt5a"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_ytt5a")
