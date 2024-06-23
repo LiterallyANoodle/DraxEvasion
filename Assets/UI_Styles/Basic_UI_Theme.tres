@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://b3c6va0gjoarl"]
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://b3c6va0gjoarl"]
 
 [ext_resource type="StyleBox" uid="uid://c4xx0th0ay8bc" path="res://Assets/UI_Styles/Highlighted_Button.tres" id="1_82vj1"]
 [ext_resource type="StyleBox" uid="uid://b86uxho6fl3l3" path="res://Assets/UI_Styles/Normal_Button_Style.tres" id="2_sxgv1"]
@@ -16,8 +16,27 @@ fill_to = Vector2(0.518018, 1)
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8que5"]
 texture = SubResource("GradientTexture2D_mnnvv")
 
+[sub_resource type="Gradient" id="Gradient_lcjsl"]
+colors = PackedColorArray(0.264575, 0.409055, 0.503953, 1, 0.887076, 0.811962, 0.794516, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_8sjhh"]
+noise_type = 0
+seed = 1
+domain_warp_enabled = true
+domain_warp_type = 2
+domain_warp_amplitude = 150.0
+domain_warp_fractal_type = 0
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_j042t"]
+color_ramp = SubResource("Gradient_lcjsl")
+noise = SubResource("FastNoiseLite_8sjhh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q73bt"]
+texture = SubResource("NoiseTexture2D_j042t")
+
 [resource]
 Button/styles/disabled = SubResource("StyleBoxTexture_8que5")
 Button/styles/hover = ExtResource("1_82vj1")
 Button/styles/normal = ExtResource("2_sxgv1")
 Button/styles/pressed = ExtResource("3_de4rn")
+Panel/styles/panel = SubResource("StyleBoxTexture_q73bt")
