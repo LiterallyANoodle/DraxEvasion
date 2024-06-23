@@ -5,5 +5,5 @@ var speed:int = 1
 
 func _physics_process(delta: float) -> void:
 	progress += speed * delta 
-	if progress > 10000:
+	if progress_ratio >= 1.0:
 		queue_free()
