@@ -37,17 +37,20 @@ alignment = 1
 layout_mode = 2
 size_flags_vertical = 3
 focus_neighbor_top = NodePath("../Quit")
+theme_override_font_sizes/font_size = 32
 text = "Play"
 
 [node name="Options" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
 text = "Options"
 
 [node name="Quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 focus_neighbor_bottom = NodePath("../Play")
+theme_override_font_sizes/font_size = 32
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_button_pressed"]

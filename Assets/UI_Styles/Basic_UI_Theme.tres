@@ -35,6 +35,8 @@ noise = SubResource("FastNoiseLite_8sjhh")
 texture = SubResource("NoiseTexture2D_j042t")
 
 [resource]
+default_font_size = 46
+Button/font_sizes/font_size = 16
 Button/styles/disabled = SubResource("StyleBoxTexture_8que5")
 Button/styles/hover = ExtResource("1_82vj1")
 Button/styles/normal = ExtResource("2_sxgv1")
